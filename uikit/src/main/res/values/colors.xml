@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="cellBackground">#fff</color>
+    <color name="realWhite">#fff</color>
+    <color name="product_list_price_color">#297EC5</color>
+    <color name="orange">#F39F1D</color>
+    <color name="prNameColor">#707070</color>
+    <color name="follow_bottom_txt_image_color">#383838</color>
+    <color name="selected_icon_blue">#2C89E7</color>
+    <color name="follow_selected_tab_background">#FFFFFF</color>
+    <color name="gray">#C3C3C3</color>
+    <color name="akakce_blue_gray600">#2F3640</color>
+    <color name="akakce_blue_gray500">#627285</color>
+    <color name="akakce_blue_gray400">#9BA7B7</color>
+    <color name="akakce_blue_gray300">#D3D9E1</color>
+    <color name="akakce_blue_gray200">#EEF0F4</color>
+    <color name="akakce_blue_gray100">#F7F8FA</color>
+    <color name="akakce_blue_gray50">#FFFFFF</color>
+    <color name="akakce_dark_blue">#092E52</color>
+    <color name="akakce_regular_blue">#135BA5</color>
+    <color name="akakce_base_blue">#2C89E7</color>
+    <color name="akakce_tint_blue">#EAF3FD</color>
+    <color name="akakce_base_orange">#E78A2C</color>
+    <color name="akakce_tint_orange">#FCF2E2</color>
+    <color name="akkace_base_green">#3CA886</color>
+    <color name="akakce_tint_green">#E1F2ED</color>
+    <color name="akakce_base_red">#F15249</color>
+    <color name="akakce_tint_red">#FFEBED</color>
+    <color name="akakce_base_purple">#754BED</color>
+    <color name="akace_tint_purple">#F0EBFF</color>
+</resources>
