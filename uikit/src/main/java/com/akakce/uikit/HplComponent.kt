@@ -11,7 +11,7 @@ import com.akakce.uikit.databinding.HplComponentBinding
  */
 class HplComponent(context: Context) : ConstraintLayout(context) {
     lateinit var binding: HplComponentBinding
-    val isFollow = false
+    var isFollow = false
 
     init {
         init()
