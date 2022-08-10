@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_font_size">10sp</dimen>
+    <dimen name="font_size_normal">10sp</dimen>
+    <dimen name="text_font_size">12sp</dimen>
+    <dimen name="product_name_size">14sp</dimen>
     <dimen name="price_font_size">14sp</dimen>
     <dimen name="price_font_weight">600</dimen>
+    <dimen name="line_height">17.6dp</dimen>
+    <dimen name="margin_xx_large">50dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_normal">15dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_x_small">5dp</dimen>
+    <dimen name="image_width">180dp</dimen>
+    <dimen name="image_height">165dp</dimen>
+    <dimen name="frame_size">40dp</dimen>
+    <dimen name="fav_icon_size">24dp</dimen>
+    <dimen name="progress_bar_size">18dp</dimen>
+    <dimen name="discount_icon_width">10dp</dimen>
+    <dimen name="discount_icon_height">7dp</dimen>
+    <dimen name="special_margin_one">8.96dp</dimen>
+    <dimen name="special_margin_two">12.71dp</dimen>
+    <dimen name="special_margin_three">8.63dp</dimen>
+    <dimen name="special_margin_four">3.91dp</dimen>
+    <dimen name="special_margin_five">3.07dp</dimen>
+    <dimen name="special_margin_six">3.96dp</dimen>
+
+
+
 </resources>
