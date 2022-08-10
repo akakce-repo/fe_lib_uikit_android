@@ -78,7 +78,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_normal"
                 android:layout_marginTop="@dimen/special_margin_one"
-                android:text="En Ucuz"
                 android:letterSpacing="0.03"
                 android:textColor="@color/akakce_blue_gray600"
                 android:textFontWeight="700"
