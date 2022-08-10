@@ -74,11 +74,11 @@
 
             <TextView
                 android:id="@+id/cheaper_text"
-                android:layout_width="@dimen/margin_xx_large"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_normal"
                 android:layout_marginTop="@dimen/special_margin_one"
-                android:fontFamily="@font/roboto_regular"
+                android:text="En Ucuz"
                 android:letterSpacing="0.03"
                 android:textColor="@color/akakce_blue_gray600"
                 android:textFontWeight="700"
