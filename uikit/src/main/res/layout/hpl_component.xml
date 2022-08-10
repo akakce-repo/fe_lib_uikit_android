@@ -44,8 +44,7 @@
                     android:id="@+id/favBtnIcon"
                     android:layout_width="@dimen/fav_icon_size"
                     android:layout_height="@dimen/fav_icon_size"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_fav_unselected" />
+                    android:layout_gravity="center" />
 
                 <ProgressBar
                     android:id="@+id/favFollowProgress"
@@ -122,6 +121,7 @@
                 app:layout_constraintTop_toBottomOf="@id/cheaper_text" />
 
             <TextView
+                android:id="@+id/count_of_prices"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/margin_normal"

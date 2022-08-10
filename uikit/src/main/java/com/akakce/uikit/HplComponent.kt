@@ -11,7 +11,6 @@ import com.akakce.uikit.databinding.HplComponentBinding
  */
 class HplComponent(context: Context) : ConstraintLayout(context) {
     lateinit var binding: HplComponentBinding
-    var isFollow = false
 
     init {
         init()
@@ -22,16 +21,5 @@ class HplComponent(context: Context) : ConstraintLayout(context) {
         binding = HplComponentBinding.inflate(inflater, this, true)
     }
 
-    fun setListener() {
-        binding.favBtnLayout.setOnClickListener {
-            isFollow = !isFollow
-        }
-        if (isFollow) {
-            binding.favBtnIcon.setBackgroundResource(R.drawable.ic_fav_selected)
-        } else {
-            binding.favBtnIcon.setBackgroundResource(R.drawable.ic_fav_unselected)
-        }
-
-    }
 
 }
