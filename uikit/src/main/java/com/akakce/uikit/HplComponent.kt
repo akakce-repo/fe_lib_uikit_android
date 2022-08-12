@@ -1,6 +1,7 @@
 package com.akakce.uikit
 
 import android.content.Context
+import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.akakce.uikit.databinding.HplComponentBinding
@@ -9,10 +10,22 @@ import com.akakce.uikit.databinding.HplComponentBinding
  * @Author: Selim Simsek
  * @Date: 5.08.2022
  */
-class HplComponent(context: Context) : ConstraintLayout(context) {
+class HplComponent : ConstraintLayout {
     lateinit var binding: HplComponentBinding
 
-    init {
+    constructor(context: Context) : super(context) {
+        init()
+    }
+
+    constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
+        init()
+    }
+
+    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(
+        context,
+        attrs,
+        defStyleAttr
+    ) {
         init()
     }
 
