@@ -24,16 +24,16 @@ class HplComponent(context: Context) : ConstraintLayout(context) {
 
     fun setListener() {
         var isFollow = false
+
         binding.favBtnLayout.setOnClickListener {
-            if (isFollow) {
-                binding.favBtnIcon.setBackgroundResource(R.drawable.ic_fav_selected)
-            } else {
-                binding.favBtnIcon.setBackgroundResource(R.drawable.ic_fav_unselected)
-            }
             isFollow = !isFollow
         }
+        val image = if (isFollow) {
+            R.drawable.ic_fav_selected
+        } else {
+            R.drawable.ic_fav_unselected
+        }
+        binding.favBtnIcon.setBackgroundResource(image)
 
     }
-
-
 }
