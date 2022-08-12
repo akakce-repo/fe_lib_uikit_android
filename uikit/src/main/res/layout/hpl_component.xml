@@ -37,6 +37,8 @@
                 android:layout_marginTop="@dimen/margin_x_small"
                 android:layout_marginEnd="@dimen/margin_x_small"
                 android:background="@drawable/follow_btn_bg"
+                android:clickable="true"
+                android:focusable="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
