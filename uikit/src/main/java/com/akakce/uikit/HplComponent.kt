@@ -32,21 +32,6 @@ class HplComponent : ConstraintLayout {
     fun init() {
         val inflater = (context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater)
         binding = HplComponentBinding.inflate(inflater, this, true)
-        setListener()
     }
 
-    fun setListener() {
-        var isFollow = false
-
-        binding.favBtnLayout.setOnClickListener {
-            isFollow = !isFollow
-        }
-        val image = if (isFollow) {
-            R.drawable.ic_fav_selected
-        } else {
-            R.drawable.ic_fav_unselected
-        }
-        binding.favBtnIcon.setBackgroundResource(image)
-
-    }
 }
