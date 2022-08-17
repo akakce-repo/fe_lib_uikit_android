@@ -14,7 +14,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="@dimen/mini_width"
-            android:layout_height="@dimen/mini_height">
+            android:layout_height="@dimen/mini_height"
+            android:background="@color/akakce_blue_gray50">
 
 
             <ImageView
@@ -102,15 +103,6 @@
                 android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/price" />
-
-            <ImageView
-                android:layout_width="@dimen/mini_union_size"
-                android:layout_height="@dimen/mini_union_size"
-                android:layout_marginEnd="@dimen/mini_union_margin"
-                android:layout_marginBottom="@dimen/mini_union_margin"
-                android:background="@drawable/ic_union"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
