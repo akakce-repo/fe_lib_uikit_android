@@ -25,6 +25,7 @@
                 android:layout_marginStart="@dimen/mini_margin_small"
                 android:layout_marginTop="@dimen/mini_margin_large"
                 android:layout_marginEnd="@dimen/mini_margin_small"
+                android:background="@color/realWhite"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
