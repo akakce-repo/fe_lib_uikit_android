@@ -14,7 +14,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/logo_image"
         android:layout_width="@dimen/mini_logo_width"
         android:layout_height="@dimen/mini_logo_height"
         android:layout_marginStart="@dimen/mini_margin"
