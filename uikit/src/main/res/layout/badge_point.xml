@@ -23,8 +23,6 @@
         android:layout_marginEnd="@dimen/mini_margin"
         android:layout_marginBottom="@dimen/mini_margin_x_small"
         android:background="@drawable/ic_star"
-        android:gravity="center"
-        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,9 +34,7 @@
         android:layout_marginTop="@dimen/mini_special_margin_six"
         android:layout_marginEnd="@dimen/mini_margin"
         android:layout_marginBottom="@dimen/mini_margin_x_small"
-        android:gravity="center"
         android:lineHeight="@dimen/mini_line_height"
-        android:orientation="horizontal"
         android:textColor="@color/akakce_blue_gray500"
         android:textFontWeight="700"
         android:textSize="@dimen/mini_text_font_size"
