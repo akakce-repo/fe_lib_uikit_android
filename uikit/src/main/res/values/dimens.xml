@@ -29,16 +29,23 @@
     <dimen name="special_margin_six">3.96dp</dimen>
 
     <!--Mini Hpl Component-->
+    <dimen name="mini_font_size_normal">10sp</dimen>
+    <dimen name="mini_line_height">12dp</dimen>
     <dimen name="corner_radius">10dp</dimen>
+    <dimen name="mini_star_size">11dp</dimen>
     <dimen name="mini_width">130dp</dimen>
     <dimen name="mini_height">185dp</dimen>
     <dimen name="mini_image_width">110dp</dimen>
     <dimen name="mini_image_height">99dp</dimen>
+    <dimen name="mini_margin_x_small">5dp</dimen>
     <dimen name="mini_margin_small">10dp</dimen>
+    <dimen name="mini_margin">15dp</dimen>
     <dimen name="mini_margin_large">20dp</dimen>
     <dimen name="mini_special_margin_one">9.85dp</dimen>
     <dimen name="mini_special_margin_two">13.86dp</dimen>
     <dimen name="mini_special_margin_three">3.89dp</dimen>
+    <dimen name="mini_special_margin_four">10.11dp</dimen>
+    <dimen name="mini_special_margin_five">8dp</dimen>
     <dimen name="mini_union_size">16dp</dimen>
     <dimen name="mini_union_margin">15dp</dimen>
 

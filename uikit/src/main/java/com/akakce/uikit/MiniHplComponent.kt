@@ -32,6 +32,11 @@ class MiniHplComponent : ConstraintLayout {
     fun init() {
         val inflater = (context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater)
         binding = MiniHplComponentBinding.inflate(inflater, this, true)
+        setUI()
+    }
+
+    private fun setUI() {
+        binding.badge.setBackgroundResource(R.drawable.badge)
     }
 
 }
