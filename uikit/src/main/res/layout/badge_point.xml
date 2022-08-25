@@ -9,7 +9,7 @@
         android:layout_width="@dimen/badge_point_width"
         android:layout_height="@dimen/badge_height"
         android:layout_marginTop="@dimen/mini_special_margin_five"
-        android:background="@drawable/badge"
+        android:background="@drawable/ic_badge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

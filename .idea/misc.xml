@@ -8,12 +8,14 @@
         <entry key="uikit/src/main/res/drawable/discount.xml" value="0.1475" />
         <entry key="uikit/src/main/res/drawable/follow_btn_bg.xml" value="0.177" />
         <entry key="uikit/src/main/res/drawable/hpl_component.xml" value="0.1475" />
+        <entry key="uikit/src/main/res/drawable/ic_badge.xml" value="0.197" />
         <entry key="uikit/src/main/res/drawable/ic_fav_selected.xml" value="0.177" />
         <entry key="uikit/src/main/res/drawable/ic_fav_unselected.xml" value="0.177" />
         <entry key="uikit/src/main/res/drawable/ic_star.xml" value="0.1915" />
         <entry key="uikit/src/main/res/drawable/ic_union.xml" value="0.195" />
         <entry key="uikit/src/main/res/drawable/price_count.xml" value="0.1475" />
-        <entry key="uikit/src/main/res/layout/badge_logo.xml" value="0.25" />
+        <entry key="uikit/src/main/res/layout/badge_logo.xml" value="1.0735321044921875" />
+        <entry key="uikit/src/main/res/layout/badge_point.xml" value="1.9328735351562503" />
         <entry key="uikit/src/main/res/layout/component.xml" value="0.36237792968750004" />
         <entry key="uikit/src/main/res/layout/deneme.xml" value="0.37395833333333334" />
         <entry key="uikit/src/main/res/layout/hpl_component.xml" value="0.25" />
