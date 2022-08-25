@@ -39,6 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:lineHeight="@dimen/mini_line_height"
+            android:layout_marginStart="@dimen/mini_special_margin_seven"
             android:textColor="@color/akakce_blue_gray500"
             android:textFontWeight="700"
             android:textSize="@dimen/mini_text_font_size" />
