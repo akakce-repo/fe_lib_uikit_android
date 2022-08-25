@@ -40,12 +40,13 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/badge">
 
                     <ImageView
                         android:id="@+id/logo"
-                        android:layout_width="50dp"
-                        android:layout_height="16dp"
+                        android:layout_width="@dimen/mini_logo_width"
+                        android:layout_height="@dimen/mini_logo_height"
                         android:layout_marginStart="@dimen/mini_margin"
                         android:layout_marginTop="@dimen/mini_margin_x_small"
                         android:layout_marginEnd="@dimen/mini_margin"
@@ -81,12 +82,12 @@
 
                         <TextView
                             android:id="@+id/point"
-                            android:layout_width="18dp"
-                            android:layout_height="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:lineHeight="@dimen/mini_line_height"
                             android:textColor="@color/akakce_blue_gray500"
                             android:textFontWeight="700"
-                            android:textSize="12sp" />
+                            android:textSize="@dimen/mini_text_font_size" />
 
 
                     </LinearLayout>
