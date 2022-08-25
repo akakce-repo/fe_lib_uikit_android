@@ -30,7 +30,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.akakce.uikit.BadgeLogo
-                android:id="@+id/badge"
+                android:id="@+id/badge_logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="gone"
@@ -38,6 +38,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.akakce.uikit.BadgePoint
+                android:id="@+id/badge_point"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="gone"
