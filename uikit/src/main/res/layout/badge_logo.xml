@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <ImageView
         android:id="@+id/badge"
         android:layout_width="@dimen/badge_logo_width"
         android:layout_height="@dimen/badge_height"
