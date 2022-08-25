@@ -67,7 +67,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/discount_cell" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/discount_icon"
                     android:layout_width="@dimen/discount_icon_width"
                     android:layout_height="@dimen/discount_icon_height"

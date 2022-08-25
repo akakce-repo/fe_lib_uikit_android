@@ -14,7 +14,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/star_icon"
         android:layout_width="@dimen/mini_star_size"
         android:layout_height="@dimen/mini_star_size"
