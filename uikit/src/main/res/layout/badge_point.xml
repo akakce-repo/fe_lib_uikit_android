@@ -20,7 +20,7 @@
         android:layout_marginTop="@dimen/mini_margin"
         android:layout_marginEnd="@dimen/mini_margin"
         android:layout_marginBottom="@dimen/mini_margin_x_small"
-        android:src="@drawable/ic_star"
+        android:src="@drawable/ic_shape"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
