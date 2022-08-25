@@ -10,12 +10,16 @@
         <entry key="uikit/src/main/res/drawable/hpl_component.xml" value="0.1475" />
         <entry key="uikit/src/main/res/drawable/ic_fav_selected.xml" value="0.177" />
         <entry key="uikit/src/main/res/drawable/ic_fav_unselected.xml" value="0.177" />
+        <entry key="uikit/src/main/res/drawable/ic_star.xml" value="0.1915" />
         <entry key="uikit/src/main/res/drawable/ic_union.xml" value="0.195" />
         <entry key="uikit/src/main/res/drawable/price_count.xml" value="0.1475" />
+        <entry key="uikit/src/main/res/layout/badge_logo.xml" value="0.25" />
         <entry key="uikit/src/main/res/layout/component.xml" value="0.36237792968750004" />
         <entry key="uikit/src/main/res/layout/deneme.xml" value="0.37395833333333334" />
         <entry key="uikit/src/main/res/layout/hpl_component.xml" value="0.25" />
-        <entry key="uikit/src/main/res/layout/mini_hpl_component.xml" value="0.335" />
+        <entry key="uikit/src/main/res/layout/logo_badge.xml" value="0.24895833333333334" />
+        <entry key="uikit/src/main/res/layout/mini_hpl_component.xml" value="0.8382211303710938" />
+        <entry key="uikit/src/main/res/layout/star_point_badge.xml" value="0.24895833333333334" />
       </map>
     </option>
   </component>

@@ -29,74 +29,21 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-
-            <androidx.cardview.widget.CardView
+            <com.akakce.uikit.BadgeLogo
                 android:id="@+id/badge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/mini_special_margin_five"
+                android:visibility="gone"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/badge">
+            <com.akakce.uikit.BadgePoint
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                    <ImageView
-                        android:id="@+id/logo"
-                        android:layout_width="@dimen/mini_logo_width"
-                        android:layout_height="@dimen/mini_logo_height"
-                        android:layout_marginStart="@dimen/mini_margin"
-                        android:layout_marginTop="@dimen/mini_margin_x_small"
-                        android:layout_marginEnd="@dimen/mini_margin"
-                        android:layout_marginBottom="@dimen/mini_margin_x_small"
-                        android:visibility="gone"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <LinearLayout
-                        android:id="@+id/star_point"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/mini_margin"
-                        android:layout_marginTop="@dimen/mini_margin_x_small"
-                        android:layout_marginEnd="@dimen/mini_margin"
-                        android:layout_marginBottom="@dimen/mini_margin_x_small"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:visibility="gone"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-
-                        <ImageView
-                            android:id="@+id/star"
-                            android:layout_width="@dimen/mini_star_size"
-                            android:layout_height="@dimen/mini_star_size"
-                            android:src="@drawable/ic_star" />
-
-                        <TextView
-                            android:id="@+id/point"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:lineHeight="@dimen/mini_line_height"
-                            android:textColor="@color/akakce_blue_gray500"
-                            android:textFontWeight="700"
-                            android:textSize="@dimen/mini_text_font_size" />
-
-
-                    </LinearLayout>
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-            </androidx.cardview.widget.CardView>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/discount_cell"

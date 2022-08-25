@@ -51,6 +51,9 @@
     <dimen name="mini_special_margin_five">8dp</dimen>
     <dimen name="mini_union_size">16dp</dimen>
     <dimen name="mini_union_margin">15dp</dimen>
+    <dimen name="badge_logo_width">80dp</dimen>
+    <dimen name="badge_height">26dp</dimen>
+    <dimen name="badge_point_width">61dp</dimen>
 
 
 </resources>
