@@ -71,7 +71,7 @@
                     android:layout_height="@dimen/discount_icon_height"
                     android:layout_marginStart="@dimen/margin_small"
                     android:layout_marginTop="@dimen/mini_special_margin_two"
-                    android:background="@drawable/discount"
+                    android:background="@drawable/ic_vector"
                     android:visibility="gone"
                     app:layout_constraintStart_toEndOf="@id/cheaper_text"
                     app:layout_constraintTop_toTopOf="@id/discount_cell" />
