@@ -47,7 +47,7 @@
                     android:layout_width="@dimen/fav_icon_size"
                     android:layout_height="@dimen/fav_icon_size"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_fav_unselected" />
+                    android:src="@drawable/fav_unselected" />
 
                 <ProgressBar
                     android:id="@+id/favFollowProgress"
@@ -94,7 +94,7 @@
                 android:layout_height="@dimen/discount_icon_height"
                 android:layout_marginStart="@dimen/margin_small"
                 android:layout_marginTop="@dimen/special_margin_two"
-                android:background="@drawable/ic_vector"
+                android:background="@drawable/discount"
                 app:layout_constraintStart_toEndOf="@id/cheaper_text"
                 app:layout_constraintTop_toBottomOf="@id/product_name" />
 

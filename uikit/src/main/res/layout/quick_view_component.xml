@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/akakce_category_background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/qv_margin"
+        android:layout_marginTop="@dimen/qv_margin_x_small"
+        android:layout_marginEnd="@dimen/qv_margin"
+        android:layout_marginBottom="@dimen/qv_margin_x_small"
+        app:cardCornerRadius="@dimen/qv_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cellContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:id="@+id/imageDarkCont"
+                android:layout_width="@dimen/qv_image_width"
+                android:layout_height="@dimen/qv_image_height"
+                android:layout_marginTop="@dimen/qv_margin_small"
+                android:layout_marginEnd="@dimen/qv_margin"
+                android:background="@drawable/image_background"
+                android:padding="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dark_image_back"
+                    android:src="@color/akakce_blue_gray500" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/color_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@id/imageDarkCont"
+                app:layout_constraintEnd_toEndOf="@id/imageDarkCont"
+                app:layout_constraintStart_toStartOf="@id/imageDarkCont"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/favBtnLayout"
+                android:layout_width="@dimen/frame_size"
+                android:layout_height="@dimen/frame_size"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_x_small"
+                android:layout_marginEnd="@dimen/margin_x_small"
+                android:background="@drawable/follow_btn_bg"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/favBtnIcon"
+                    android:layout_width="@dimen/fav_icon_size"
+                    android:layout_height="@dimen/fav_icon_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fav_unselected" />
+
+                <ProgressBar
+                    android:id="@+id/favFollowProgress"
+                    android:layout_width="@dimen/progress_bar_size"
+                    android:layout_height="@dimen/progress_bar_size"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/closeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qv_margin_large"
+                android:layout_marginEnd="@dimen/qv_margin"
+                android:src="@drawable/qv_close"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/name"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/text_height"
+                android:layout_marginStart="@dimen/qv_margin_small"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:fontFamily="@font/roboto_regular"
+                android:lineHeight="@dimen/line_height"
+                android:maxLines="2"
+                android:textColor="@color/akakce_blue_gray500"
+                android:textFontWeight="400"
+                android:textSize="@dimen/product_name_size"
+                app:layout_constraintEnd_toStartOf="@id/favBtnLayout"
+                app:layout_constraintStart_toEndOf="@id/imageDarkCont"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/star_list"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/qv_margin"
+                android:layout_marginStart="@dimen/qv_margin_x_small"
+                android:layout_marginTop="@dimen/margin_x_small"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@id/imageDarkCont"
+                app:layout_constraintTop_toBottomOf="@id/name" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cheaper_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/qv_margin_small"
+                android:layout_marginTop="@dimen/qv_special_margin_nine"
+                android:letterSpacing="0.03"
+                android:textColor="@color/akakce_blue_gray600"
+                android:textFontWeight="700"
+                android:textSize="@dimen/font_size_normal"
+                app:layout_constraintStart_toEndOf="@id/imageDarkCont"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/discount_icon"
+                android:layout_width="@dimen/discount_icon_width"
+                android:layout_height="@dimen/discount_icon_height"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginTop="@dimen/qv_special_margin_one"
+                android:background="@drawable/discount"
+                app:layout_constraintStart_toEndOf="@id/cheaper_text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/discount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/special_margin_four"
+                android:layout_marginTop="@dimen/qv_special_margin_two"
+                android:fontFamily="@font/roboto_regular"
+                android:lineHeight="@dimen/qv_text_line_height"
+                android:textColor="@color/akakce_base_green"
+                android:textFontWeight="700"
+                android:textSize="@dimen/text_font_size"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@id/discount_icon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/qv_margin_small"
+                android:layout_marginTop="@dimen/special_margin_five"
+                android:fontFamily="@font/roboto_regular"
+                android:includeFontPadding="false"
+                android:textColor="@color/akakce_blue_gray600"
+                android:textFontWeight="700"
+                android:textSize="@dimen/price_font_size"
+                app:layout_constraintStart_toEndOf="@id/imageDarkCont"
+                app:layout_constraintTop_toBottomOf="@id/cheaper_text" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/count_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/special_margin_five"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:fontFamily="@font/roboto_regular"
+                android:letterSpacing="0.12"
+                android:textAllCaps="true"
+                android:textColor="@color/akakce_base_blue"
+                android:textFontWeight="400"
+                android:textSize="@dimen/text_font_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cheaper_text" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/unit_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/qv_margin_small"
+                android:layout_marginTop="@dimen/special_margin_six"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/akakce_base_purple"
+                android:textFontWeight="400"
+                android:textSize="@dimen/text_font_size"
+                app:layout_constraintStart_toEndOf="@id/imageDarkCont"
+                app:layout_constraintTop_toBottomOf="@id/price" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/qv_line_heigth"
+                android:layout_marginStart="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/qv_special_margin_eight"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:background="@color/akakce_blue_gray200"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageDarkCont"
+                app:layout_constraintTop_toBottomOf="@id/unit_price" />
+
+            <ImageView
+                android:id="@+id/dot"
+                android:layout_width="@dimen/qv_small_size"
+                android:layout_height="@dimen/qv_small_size"
+                android:layout_marginStart="@dimen/qv_margin_small"
+                android:layout_marginTop="@dimen/qv_margin_x_small"
+                android:src="@drawable/qv_dot"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/imageDarkCont"
+                app:layout_constraintTop_toBottomOf="@id/line" />
+
+            <LinearLayout
+                android:id="@+id/bro_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/qv_special_margin_three"
+                android:layout_marginTop="@dimen/qv_special_margin_three"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/qv_special_margin_six"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/dot"
+                app:layout_constraintTop_toBottomOf="@id/line" />
+
+
+            <ImageView
+                android:id="@+id/dot_info"
+                android:layout_width="@dimen/qv_small_size"
+                android:layout_height="@dimen/qv_small_size"
+                android:layout_marginStart="@dimen/qv_margin_small"
+                android:layout_marginTop="@dimen/qv_special_margin_seven"
+                android:src="@drawable/qv_dot"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/imageDarkCont"
+                app:layout_constraintTop_toBottomOf="@id/dot" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/info_list"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/qv_special_margin_three"
+                android:layout_marginTop="@dimen/qv_special_margin_five"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:maxLines="1"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/qv_special_margin_six"
+                android:textColor="@color/akakce_blue_gray500"
+                android:textSize="@dimen/mini_font_size_normal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/dot_info"
+                app:layout_constraintTop_toBottomOf="@id/dot" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/prQvRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/qv_recycler_margin"
+                android:layout_marginTop="@dimen/qv_margin_large"
+                android:layout_marginEnd="@dimen/qv_recycler_margin"
+                android:background="@color/transparent"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageDarkCont" />
+
+            <RelativeLayout
+                android:id="@+id/qv_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/qv_special_margin_four"
+                android:layout_below="@+id/prQvRecycler"
+                android:layout_marginTop="@dimen/qv_margin_large"
+                android:layout_marginBottom="@dimen/qv_margin_small"
+                android:gravity="center_vertical"
+                android:padding="@dimen/qv_margin_small"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/prQvRecycler">
+
+                <RelativeLayout
+                    android:id="@+id/detailBtnLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/qv_btn_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="@dimen/qv_margin_x_small"
+                    android:layout_marginBottom="@dimen/qv_margin_large"
+                    android:background="@drawable/button_bakground"
+                    android:paddingLeft="@dimen/qv_btn_padding"
+                    android:paddingTop="@dimen/qv_margin_x_small"
+                    android:paddingRight="@dimen/qv_btn_padding"
+                    android:paddingBottom="@dimen/qv_margin_x_small">
+
+                    <TextView
+                        android:id="@+id/detailBtnTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="@string/details"
+                        android:textColor="@color/realWhite"
+                        android:textSize="@dimen/text_font_size"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
