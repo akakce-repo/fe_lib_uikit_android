@@ -86,6 +86,6 @@
     <dimen name="qv_text_line_height">14dp</dimen>
     <dimen name="qv_badge_text_size">12sp</dimen>
     <dimen name="qv_badge_line_height">14dp</dimen>
-    <dimen name="qv_corner_radius">8dp</dimen>
+    <dimen name="qv_corner_radius">10dp</dimen>
 
 </resources>
