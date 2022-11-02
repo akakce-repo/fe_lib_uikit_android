@@ -26,6 +26,9 @@
     <color name="akakce_tint_red">#372D36</color>
     <color name="akakce_base_purple">#AC93F4</color>
     <color name="akace_tint_purple">#262A47</color>
+    <color name="akakce_category_background">#1c1c1c</color>
+    <color name="search_blue">#143A59</color>
+    <color name="transparent">#00000000</color>
 
 
 </resources>

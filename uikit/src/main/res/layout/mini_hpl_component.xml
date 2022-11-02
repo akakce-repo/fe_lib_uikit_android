@@ -123,7 +123,7 @@
                 android:layout_height="@dimen/mini_union_size"
                 android:layout_marginEnd="@dimen/mini_union_margin"
                 android:layout_marginBottom="@dimen/mini_union_margin"
-                android:src="@drawable/ic_union"
+                android:src="@drawable/search"
                 android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />

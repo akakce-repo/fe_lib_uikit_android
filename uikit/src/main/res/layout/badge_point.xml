@@ -8,7 +8,7 @@
         android:layout_width="@dimen/badge_point_width"
         android:layout_height="@dimen/badge_height"
         android:layout_marginTop="@dimen/mini_special_margin_five"
-        android:background="@drawable/ic_badge"
+        android:background="@drawable/hpl_badge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,7 +20,7 @@
         android:layout_marginTop="@dimen/mini_margin"
         android:layout_marginEnd="@dimen/mini_margin"
         android:layout_marginBottom="@dimen/mini_margin_x_small"
-        android:src="@drawable/ic_shape"
+        android:src="@drawable/star"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

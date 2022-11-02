@@ -7,7 +7,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="@dimen/margin_normal"
+        app:cardCornerRadius="@dimen/qv_corner_radius"
         app:cardUseCompatPadding="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -29,6 +29,22 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qv_special_one"
+                android:background="@drawable/hpl_badge"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="start"
+                android:lineHeight="@dimen/qv_badge_line_height"
+                android:textAlignment="center"
+                android:textFontWeight="700"
+                android:textSize="@dimen/qv_badge_text_size"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <FrameLayout
                 android:id="@+id/favBtnLayout"
                 android:layout_width="@dimen/frame_size"
@@ -47,7 +63,7 @@
                     android:layout_width="@dimen/fav_icon_size"
                     android:layout_height="@dimen/fav_icon_size"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_fav_unselected" />
+                    android:src="@drawable/fav_unselected" />
 
                 <ProgressBar
                     android:id="@+id/favFollowProgress"
@@ -61,7 +77,7 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/product_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/text_height"
                 android:layout_marginStart="@dimen/margin_normal"
                 android:layout_marginTop="@dimen/margin_small"
                 android:layout_marginEnd="@dimen/margin_normal"
