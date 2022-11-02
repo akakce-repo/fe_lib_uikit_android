@@ -7,7 +7,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="@dimen/margin_normal"
+        app:cardCornerRadius="@dimen/qv_corner_radius"
         app:cardUseCompatPadding="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -26,6 +26,22 @@
                 android:layout_marginEnd="@dimen/margin_normal"
                 android:background="@color/realWhite"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/qv_special_one"
+                android:background="@drawable/hpl_badge"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="start"
+                android:lineHeight="@dimen/qv_badge_line_height"
+                android:textAlignment="center"
+                android:textFontWeight="700"
+                android:textSize="@dimen/qv_badge_text_size"
+                android:visibility="gone"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

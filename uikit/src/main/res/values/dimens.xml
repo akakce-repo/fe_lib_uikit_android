@@ -67,6 +67,7 @@
     <dimen name="qv_margin_large">20dp</dimen>
     <dimen name="qv_margin_x_small">8dp</dimen>
     <dimen name="qv_special">5dp</dimen>
+    <dimen name="qv_special_one">6dp</dimen>
     <dimen name="qv_margin">16dp</dimen>
     <dimen name="qv_special_margin_one">80dp</dimen>
     <dimen name="qv_special_margin_two">73dp</dimen>
@@ -83,5 +84,8 @@
     <dimen name="qv_btn_padding">24dp</dimen>
     <dimen name="qv_recycler_margin">12dp</dimen>
     <dimen name="qv_text_line_height">14dp</dimen>
+    <dimen name="qv_badge_text_size">12sp</dimen>
+    <dimen name="qv_badge_line_height">14dp</dimen>
+    <dimen name="qv_corner_radius">10dp</dimen>
 
 </resources>
