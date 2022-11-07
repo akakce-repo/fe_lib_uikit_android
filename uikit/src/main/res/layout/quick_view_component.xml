@@ -65,6 +65,17 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <FrameLayout
+                android:id="@+id/end_of_text"
+                android:layout_width="@dimen/frame_size"
+                android:layout_height="@dimen/frame_size"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_x_small"
+                android:layout_marginEnd="@dimen/margin_x_small"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
                 android:id="@+id/favBtnLayout"
                 android:layout_width="@dimen/frame_size"
                 android:layout_height="@dimen/frame_size"
@@ -117,7 +128,7 @@
                 android:textColor="@color/akakce_blue_gray500"
                 android:textFontWeight="400"
                 android:textSize="@dimen/product_name_size"
-                app:layout_constraintEnd_toStartOf="@id/favBtnLayout"
+                app:layout_constraintEnd_toStartOf="@id/end_of_text"
                 app:layout_constraintStart_toEndOf="@id/imageDarkCont"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -214,11 +225,11 @@
 
             <FrameLayout
                 android:id="@+id/otherPopup"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/qv_popup_size"
+                android:layout_height="@dimen/qv_popup_size"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="@dimen/margin_x_small"
-                android:layout_marginEnd="@dimen/margin_x_small"
+                android:layout_marginTop="@dimen/qv_special_margin_eight"
+                android:layout_marginEnd="@dimen/qv_special_margin_eleven"
                 android:clickable="true"
                 android:focusable="true"
                 android:visibility="gone"
@@ -241,7 +252,7 @@
                 android:layout_below="@id/otherPopup"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="@dimen/qv_special_margin_eight"
-                android:layout_marginEnd="@dimen/special_margin_seven"
+                android:layout_marginEnd="@dimen/qv_special_margin_ten"
                 android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/otherPopup">
