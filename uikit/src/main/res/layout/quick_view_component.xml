@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/akakce_category_background">
@@ -40,6 +41,15 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/dark_image_back"
                     android:src="@color/akakce_blue_gray500" />
+
+                <ImageView
+                    android:id="@+id/checkImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/selected_product"
+                    android:scaleType="center"
+                    android:visibility="gone"
+                    tools:src="@drawable/ic_mvproduct_follow_check" />
 
 
             </FrameLayout>
@@ -201,6 +211,48 @@
                 android:textSize="@dimen/text_font_size"
                 app:layout_constraintStart_toEndOf="@id/imageDarkCont"
                 app:layout_constraintTop_toBottomOf="@id/price" />
+
+            <FrameLayout
+                android:id="@+id/otherPopup"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_x_small"
+                android:layout_marginEnd="@dimen/margin_x_small"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/otherImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_other_image" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/quietFrame"
+                android:layout_width="@dimen/qv_margin"
+                android:layout_height="@dimen/qv_margin"
+                android:layout_below="@id/otherPopup"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/qv_special_margin_eight"
+                android:layout_marginEnd="@dimen/special_margin_seven"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/otherPopup">
+
+                <ImageView
+                    android:id="@+id/quietImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_product_quiet" />
+            </FrameLayout>
 
             <View
                 android:id="@+id/line"
