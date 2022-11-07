@@ -2,4 +2,5 @@
 <resources>
     <string name="details">Detaylar</string>
     <string name="cheapest">En Ucuz</string>
+    <string name="selected_product">Secilen ürün</string>
 </resources>

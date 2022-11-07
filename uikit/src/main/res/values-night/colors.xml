@@ -29,6 +29,7 @@
     <color name="akakce_category_background">#1c1c1c</color>
     <color name="search_blue">#143A59</color>
     <color name="transparent">#00000000</color>
+    <color name="gray">#6C6C6C</color>
 
 
 </resources>
