@@ -10,9 +10,9 @@
         android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/qv_margin"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="@dimen/qv_margin_x_small"
-        android:layout_marginEnd="@dimen/qv_margin"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="@dimen/qv_margin_x_small"
         app:cardCornerRadius="@dimen/qv_margin"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +26,7 @@
 
             <FrameLayout
                 android:id="@+id/imageDarkCont"
-                android:layout_width="@dimen/qv_image_width"
+                android:layout_width="110dp"
                 android:layout_height="@dimen/qv_image_height"
                 android:layout_marginTop="@dimen/qv_margin_small"
                 android:layout_marginEnd="@dimen/qv_margin"
@@ -118,10 +118,10 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/name"
                 android:layout_width="@dimen/zero"
-                android:layout_height="@dimen/text_height"
+                android:layout_height="32dp"
                 android:layout_marginStart="@dimen/qv_margin_small"
                 android:layout_marginTop="@dimen/margin_normal"
-                android:layout_marginEnd="@dimen/margin_normal"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/roboto_regular"
                 android:lineHeight="@dimen/line_height"
                 android:maxLines="2"
@@ -135,7 +135,7 @@
             <LinearLayout
                 android:id="@+id/star_list"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/qv_margin"
+                android:layout_height="10dp"
                 android:layout_marginStart="@dimen/qv_margin_x_small"
                 android:layout_marginTop="@dimen/margin_x_small"
                 android:orientation="horizontal"
@@ -215,7 +215,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/qv_margin_small"
-                android:layout_marginTop="@dimen/special_margin_six"
+                android:layout_marginTop="4dp"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/akakce_base_purple"
                 android:textFontWeight="400"
@@ -270,7 +270,7 @@
                 android:layout_width="@dimen/zero"
                 android:layout_height="@dimen/qv_line_heigth"
                 android:layout_marginStart="@dimen/margin_normal"
-                android:layout_marginTop="@dimen/qv_special_margin_eight"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="@dimen/margin_normal"
                 android:background="@color/akakce_blue_gray200"
                 android:visibility="invisible"
@@ -301,6 +301,56 @@
                 android:visibility="gone"
                 app:layout_constraintStart_toEndOf="@id/dot"
                 app:layout_constraintTop_toBottomOf="@id/line" />
+
+            <RelativeLayout
+                android:id="@+id/follow_inf_rlt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/special_margin_three"
+                android:layout_toEndOf="@id/imageDarkCont"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/dot"
+                app:layout_constraintTop_toBottomOf="@id/line">
+
+                <TextView
+                    android:id="@+id/follow_date_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:maxLines="1"
+                    android:textColor="@color/prNameColor"
+                    android:textSize="@dimen/qv_badge_text_size"
+                    android:textStyle="normal"
+                    tools:text="13 Ağustos 2021" />
+
+                <TextView
+                    android:id="@+id/follow_price_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/follow_date_txt"
+                    android:maxLines="1"
+                    android:textColor="@color/prNameColor"
+                    android:textSize="@dimen/qv_badge_text_size"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/follow_percent_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/qv_recycler_margin"
+                    android:layout_toEndOf="@id/follow_price_txt"
+                    android:fontFamily="@font/roboto_medium"
+                    android:maxLines="1"
+                    android:textColor="@color/akakce_blue_gray500"
+                    android:textSize="@dimen/qv_badge_text_size"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
 
 
             <ImageView
