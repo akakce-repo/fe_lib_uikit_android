@@ -304,7 +304,7 @@
 
             <RelativeLayout
                 android:id="@+id/follow_inf_rlt"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/qv_special_margin_three"
                 android:layout_marginTop="@dimen/qv_special_margin_three"
@@ -351,6 +351,20 @@
                     android:textColor="@color/akakce_blue_gray500"
                     android:textSize="@dimen/qv_badge_text_size"
                     android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/follow_percent_image"
+                    android:layout_width="@dimen/qv_special_margin_six"
+                    android:layout_height="@dimen/qv_special_margin_five"
+                    android:layout_alignTop="@id/follow_percent_txt"
+                    android:layout_alignBottom="@id/follow_percent_txt"
+                    android:layout_marginStart="@dimen/qv_special_margin_twelve"
+                    android:layout_marginTop="@dimen/qv_special_margin_three"
+                    android:layout_marginBottom="@dimen/qv_special_margin_twelve"
+                    android:layout_toEndOf="@id/follow_percent_txt"
+                    android:scaleType="fitCenter"
+                    app:tint="@color/akakce_blue_gray500"
+                    tools:src="@drawable/ic_pci_up" />
 
             </RelativeLayout>
 
@@ -439,7 +453,6 @@
                 </RelativeLayout>
 
             </RelativeLayout>
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
