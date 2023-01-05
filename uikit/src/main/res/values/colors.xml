@@ -31,4 +31,5 @@
     <color name="akakce_category_background">#F2F4F6</color>
     <color name="search_blue">#297EC5</color>
     <color name="transparent">#00000000</color>
+    <color name="akakce_qv_button_bg">#F7F8FA</color>
 </resources>

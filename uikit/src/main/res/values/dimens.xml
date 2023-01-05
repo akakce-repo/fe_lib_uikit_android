@@ -29,8 +29,6 @@
     <dimen name="special_margin_four">3.91dp</dimen>
     <dimen name="special_margin_five">3.07dp</dimen>
     <dimen name="special_margin_six">3.96dp</dimen>
-    <dimen name="special_margin_seven">12dp</dimen>
-    <dimen name="special_margin_eight">8dp</dimen>
 
     <!--Mini Hpl Component-->
     <dimen name="mini_logo_width">50dp</dimen>
@@ -78,8 +76,11 @@
     <dimen name="qv_special_margin_five">7dp</dimen>
     <dimen name="qv_special_margin_six">9dp</dimen>
     <dimen name="qv_special_margin_seven">11dp</dimen>
-    <dimen name="qv_special_margin_eight">9.97dp</dimen>
+    <dimen name="qv_special_margin_eight">8dp</dimen>
     <dimen name="qv_special_margin_nine">75dp</dimen>
+    <dimen name="qv_special_margin_ten">16dp</dimen>
+    <dimen name="qv_special_margin_eleven">10dp</dimen>
+    <dimen name="qv_special_margin_twelve">3dp</dimen>
     <dimen name="qv_line_heigth">3dp</dimen>
     <dimen name="qv_small_size">5dp</dimen>
     <dimen name="qv_btn_height">33dp</dimen>
@@ -89,5 +90,6 @@
     <dimen name="qv_badge_text_size">12sp</dimen>
     <dimen name="qv_badge_line_height">14dp</dimen>
     <dimen name="qv_corner_radius">10dp</dimen>
+    <dimen name="qv_popup_size">30dp</dimen>
 
 </resources>

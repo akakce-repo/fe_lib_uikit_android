@@ -10,9 +10,9 @@
         android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/qv_margin"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="@dimen/qv_margin_x_small"
-        android:layout_marginEnd="@dimen/qv_margin"
+        android:layout_marginEnd="@dimen/qv_margin_small"
         android:layout_marginBottom="@dimen/qv_margin_x_small"
         app:cardCornerRadius="@dimen/qv_margin"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +26,7 @@
 
             <FrameLayout
                 android:id="@+id/imageDarkCont"
-                android:layout_width="@dimen/qv_image_width"
+                android:layout_width="110dp"
                 android:layout_height="@dimen/qv_image_height"
                 android:layout_marginTop="@dimen/qv_margin_small"
                 android:layout_marginEnd="@dimen/qv_margin"
@@ -62,6 +62,17 @@
                 app:layout_constraintBottom_toBottomOf="@id/imageDarkCont"
                 app:layout_constraintEnd_toEndOf="@id/imageDarkCont"
                 app:layout_constraintStart_toStartOf="@id/imageDarkCont"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/end_of_text"
+                android:layout_width="@dimen/frame_size"
+                android:layout_height="@dimen/frame_size"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_x_small"
+                android:layout_marginEnd="@dimen/margin_x_small"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <FrameLayout
@@ -107,24 +118,24 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/name"
                 android:layout_width="@dimen/zero"
-                android:layout_height="@dimen/text_height"
-                android:layout_marginStart="@dimen/qv_margin_small"
+                android:layout_height="32dp"
+                android:layout_marginStart="@dimen/qv_margin_x_small"
                 android:layout_marginTop="@dimen/margin_normal"
-                android:layout_marginEnd="@dimen/margin_normal"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/roboto_regular"
                 android:lineHeight="@dimen/line_height"
                 android:maxLines="2"
                 android:textColor="@color/akakce_blue_gray500"
                 android:textFontWeight="400"
                 android:textSize="@dimen/product_name_size"
-                app:layout_constraintEnd_toStartOf="@id/favBtnLayout"
+                app:layout_constraintEnd_toStartOf="@id/end_of_text"
                 app:layout_constraintStart_toEndOf="@id/imageDarkCont"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
                 android:id="@+id/star_list"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/qv_margin"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/qv_margin_x_small"
                 android:layout_marginTop="@dimen/margin_x_small"
                 android:orientation="horizontal"
@@ -135,7 +146,7 @@
                 android:id="@+id/cheaper_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/qv_margin_small"
+                android:layout_marginStart="@dimen/qv_margin_x_small"
                 android:layout_marginTop="@dimen/qv_special_margin_nine"
                 android:letterSpacing="0.03"
                 android:text="@string/cheapest"
@@ -174,7 +185,7 @@
                 android:id="@+id/price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/qv_margin_small"
+                android:layout_marginStart="@dimen/qv_margin_x_small"
                 android:layout_marginTop="@dimen/special_margin_five"
                 android:fontFamily="@font/roboto_regular"
                 android:includeFontPadding="false"
@@ -203,8 +214,8 @@
                 android:id="@+id/unit_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/qv_margin_small"
-                android:layout_marginTop="@dimen/special_margin_six"
+                android:layout_marginStart="@dimen/qv_margin_x_small"
+                android:layout_marginTop="4dp"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/akakce_base_purple"
                 android:textFontWeight="400"
@@ -214,11 +225,11 @@
 
             <FrameLayout
                 android:id="@+id/otherPopup"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/qv_popup_size"
+                android:layout_height="@dimen/qv_popup_size"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="@dimen/margin_x_small"
-                android:layout_marginEnd="@dimen/margin_x_small"
+                android:layout_marginTop="@dimen/qv_special_margin_eight"
+                android:layout_marginEnd="@dimen/qv_special_margin_eleven"
                 android:clickable="true"
                 android:focusable="true"
                 android:visibility="gone"
@@ -241,7 +252,7 @@
                 android:layout_below="@id/otherPopup"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="@dimen/qv_special_margin_eight"
-                android:layout_marginEnd="@dimen/special_margin_seven"
+                android:layout_marginEnd="@dimen/qv_special_margin_ten"
                 android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/otherPopup">
@@ -258,8 +269,8 @@
                 android:id="@+id/line"
                 android:layout_width="@dimen/zero"
                 android:layout_height="@dimen/qv_line_heigth"
-                android:layout_marginStart="@dimen/margin_normal"
-                android:layout_marginTop="@dimen/qv_special_margin_eight"
+                android:layout_marginStart="@dimen/qv_margin_x_small"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="@dimen/margin_normal"
                 android:background="@color/akakce_blue_gray200"
                 android:visibility="invisible"
@@ -271,7 +282,7 @@
                 android:id="@+id/dot"
                 android:layout_width="@dimen/qv_small_size"
                 android:layout_height="@dimen/qv_small_size"
-                android:layout_marginStart="@dimen/qv_margin_small"
+                android:layout_marginStart="@dimen/qv_margin_x_small"
                 android:layout_marginTop="@dimen/qv_margin_x_small"
                 android:src="@drawable/qv_dot"
                 android:visibility="gone"
@@ -291,12 +302,78 @@
                 app:layout_constraintStart_toEndOf="@id/dot"
                 app:layout_constraintTop_toBottomOf="@id/line" />
 
+            <RelativeLayout
+                android:id="@+id/follow_inf_rlt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/qv_special_margin_three"
+                android:layout_marginTop="@dimen/qv_special_margin_twelve"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/qv_special_margin_six"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/dot"
+                app:layout_constraintTop_toBottomOf="@id/line">
+
+                <TextView
+                    android:id="@+id/follow_date_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:maxLines="1"
+                    android:textColor="@color/prNameColor"
+                    android:textSize="@dimen/qv_badge_text_size"
+                    android:textStyle="normal"
+                    tools:text="13 Ağustos 2021" />
+
+                <TextView
+                    android:id="@+id/follow_price_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/follow_date_txt"
+                    android:maxLines="1"
+                    android:textColor="@color/prNameColor"
+                    android:textSize="@dimen/qv_badge_text_size"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/follow_percent_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/qv_recycler_margin"
+                    android:layout_toEndOf="@id/follow_price_txt"
+                    android:fontFamily="@font/roboto_medium"
+                    android:maxLines="1"
+                    android:textColor="@color/akakce_blue_gray500"
+                    android:textSize="@dimen/qv_badge_text_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/follow_percent_image"
+                    android:layout_width="@dimen/qv_special_margin_six"
+                    android:layout_height="@dimen/qv_special_margin_five"
+                    android:layout_alignTop="@id/follow_percent_txt"
+                    android:layout_alignBottom="@id/follow_percent_txt"
+                    android:layout_marginStart="@dimen/qv_special_margin_twelve"
+                    android:layout_marginTop="@dimen/qv_special_margin_three"
+                    android:layout_marginBottom="@dimen/qv_special_margin_twelve"
+                    android:layout_toEndOf="@id/follow_percent_txt"
+                    android:scaleType="fitCenter"
+                    app:tint="@color/akakce_blue_gray500"
+                    tools:src="@drawable/ic_pci_up" />
+
+            </RelativeLayout>
+
 
             <ImageView
                 android:id="@+id/dot_info"
                 android:layout_width="@dimen/qv_small_size"
                 android:layout_height="@dimen/qv_small_size"
-                android:layout_marginStart="@dimen/qv_margin_small"
+                android:layout_marginStart="@dimen/qv_margin_x_small"
                 android:layout_marginTop="@dimen/qv_special_margin_seven"
                 android:src="@drawable/qv_dot"
                 android:visibility="gone"
@@ -376,7 +453,6 @@
                 </RelativeLayout>
 
             </RelativeLayout>
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

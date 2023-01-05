@@ -30,6 +30,7 @@
     <color name="search_blue">#143A59</color>
     <color name="transparent">#00000000</color>
     <color name="gray">#6C6C6C</color>
+    <color name="akakce_qv_button_bg">#95A2AE</color>
 
 
 </resources>
