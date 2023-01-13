@@ -410,16 +410,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/imageDarkCont" />
 
-
-            <FrameLayout
-                android:id="@+id/frame_popup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                app:layout_constraintTop_toBottomOf="@id/imageDarkCont"
-                app:layout_constraintBottom_toTopOf="@id/prQvRecycler"
-                app:layout_constraintEnd_toEndOf="parent" />
-
             <RelativeLayout
                 android:id="@+id/qv_bottom_layout"
                 android:layout_width="match_parent"
@@ -462,6 +452,15 @@
                 </RelativeLayout>
 
             </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/prQvRecycler"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageDarkCont" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
