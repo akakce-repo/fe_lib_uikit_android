@@ -156,13 +156,13 @@
                 app:layout_constraintStart_toEndOf="@id/imageDarkCont"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/discount_icon"
                 android:layout_width="@dimen/discount_icon_width"
                 android:layout_height="@dimen/discount_icon_height"
                 android:layout_marginStart="@dimen/margin_small"
                 android:layout_marginTop="@dimen/qv_special_margin_one"
-                android:background="@drawable/ic_vector"
+                android:src="@drawable/ic_vector"
                 app:layout_constraintStart_toEndOf="@id/cheaper_text"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -458,7 +458,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="gone"
-                app:layout_constraintBottom_toTopOf="@id/prQvRecycler"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/imageDarkCont" />
 
