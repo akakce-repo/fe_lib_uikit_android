@@ -405,6 +405,7 @@
                 android:layout_marginTop="@dimen/qv_margin_large"
                 android:layout_marginEnd="@dimen/qv_recycler_margin"
                 android:background="@color/transparent"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/imageDarkCont" />
@@ -418,6 +419,7 @@
                 android:layout_marginBottom="@dimen/qv_margin_small"
                 android:gravity="center_vertical"
                 android:padding="@dimen/qv_margin_small"
+                android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -455,9 +457,9 @@
                 android:id="@+id/frame_popup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@id/prQvRecycler"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageDarkCont" />
+                app:layout_constraintTop_toBottomOf="@id/cheaper_text" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
