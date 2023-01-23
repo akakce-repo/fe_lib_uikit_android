@@ -4,10 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/badge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:layout_width="@dimen/badge_point_width"
+        android:layout_height="@dimen/badge_height"
         android:layout_marginTop="@dimen/mini_special_margin_five"
         android:background="@drawable/hpl_badge"
         app:layout_constraintStart_toStartOf="parent"
