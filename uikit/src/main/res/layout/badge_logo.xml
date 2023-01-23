@@ -4,14 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/badge"
-        android:layout_width="50dp"
-        android:layout_height="16dp"
+    <ImageView
+        android:layout_width="@dimen/badge_logo_width"
+        android:layout_height="@dimen/badge_height"
         android:layout_marginTop="@dimen/mini_special_margin_five"
         android:background="@drawable/hpl_badge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="@dimen/mini_logo_width"
+        android:layout_height="@dimen/mini_logo_height"
+        android:layout_marginStart="@dimen/mini_margin"
+        android:layout_marginTop="@dimen/mini_special_margin_six"
+        android:layout_marginEnd="@dimen/mini_margin"
+        android:layout_marginBottom="@dimen/mini_margin_x_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
