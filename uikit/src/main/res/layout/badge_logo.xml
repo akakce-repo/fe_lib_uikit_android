@@ -8,7 +8,7 @@
         android:layout_width="@dimen/badge_logo_width"
         android:layout_height="@dimen/badge_height"
         android:layout_marginTop="@dimen/mini_special_margin_five"
-        android:background="@drawable/hpl_badge"
+        android:background="@drawable/mini_hpl_badge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
