@@ -32,5 +32,6 @@
     <color name="gray">#6C6C6C</color>
     <color name="akakce_qv_button_bg">#95A2AE</color>
     <color name="akakce_mini_badge_bg">#95A2AE</color>
+    <color name="akakce_mini_badge_txt">#6A747E</color>
 
 </resources>

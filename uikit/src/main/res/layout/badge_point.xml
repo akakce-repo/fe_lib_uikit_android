@@ -33,7 +33,7 @@
         android:layout_marginEnd="@dimen/mini_margin"
         android:layout_marginBottom="@dimen/mini_margin_x_small"
         android:lineHeight="@dimen/mini_line_height"
-        android:textColor="@color/akakce_blue_gray500"
+        android:textColor="@color/akakce_mini_badge_txt"
         android:textFontWeight="700"
         android:textSize="@dimen/mini_text_font_size"
         app:layout_constraintStart_toEndOf="@id/star_icon"
