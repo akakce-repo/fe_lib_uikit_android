@@ -32,4 +32,6 @@
     <color name="search_blue">#297EC5</color>
     <color name="transparent">#00000000</color>
     <color name="akakce_qv_button_bg">#F7F8FA</color>
+    <color name="akakce_mini_badge_bg">#FFFFFF</color>
+
 </resources>
