@@ -81,7 +81,7 @@
     <dimen name="qv_special_margin_ten">16dp</dimen>
     <dimen name="qv_special_margin_eleven">10dp</dimen>
     <dimen name="qv_special_margin_twelve">3dp</dimen>
-    <dimen name="qv_line_heigth">3dp</dimen>
+    <dimen name="qv_line_heigth">1dp</dimen>
     <dimen name="qv_small_size">5dp</dimen>
     <dimen name="qv_btn_height">33dp</dimen>
     <dimen name="qv_btn_padding">24dp</dimen>
