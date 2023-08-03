@@ -92,5 +92,6 @@
     <dimen name="qv_corner_radius">10dp</dimen>
     <dimen name="qv_popup_size">30dp</dimen>
     <dimen name="qv_text_font_size">10sp</dimen>
+    <dimen name="qv_dot_margin">12dp</dimen>
 
 </resources>
