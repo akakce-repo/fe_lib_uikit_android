@@ -206,7 +206,7 @@
                 android:textAllCaps="true"
                 android:textColor="@color/akakce_base_blue"
                 android:textFontWeight="400"
-                android:textSize="@dimen/text_font_size"
+                android:textSize="@dimen/qv_text_font_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cheaper_text" />
 
