@@ -30,6 +30,7 @@
                 android:layout_height="@dimen/qv_image_height"
                 android:layout_marginTop="@dimen/qv_margin_small"
                 android:layout_marginEnd="@dimen/qv_margin"
+                android:layout_marginStart="5dp"
                 android:background="@drawable/image_background"
                 android:padding="5dp"
                 app:layout_constraintStart_toStartOf="parent"
