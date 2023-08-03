@@ -91,5 +91,6 @@
     <dimen name="qv_badge_line_height">14dp</dimen>
     <dimen name="qv_corner_radius">10dp</dimen>
     <dimen name="qv_popup_size">30dp</dimen>
+    <dimen name="qv_text_font_size">10sp</dimen>
 
 </resources>
