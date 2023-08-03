@@ -283,7 +283,7 @@
                 android:layout_width="@dimen/qv_small_size"
                 android:layout_height="@dimen/qv_small_size"
                 android:layout_marginStart="@dimen/qv_margin_x_small"
-                android:layout_marginTop="@dimen/qv_margin_x_small"
+                android:layout_marginTop="@dimen/qv_dot_margin"
                 android:src="@drawable/qv_dot"
                 android:visibility="gone"
                 app:layout_constraintStart_toEndOf="@id/imageDarkCont"
