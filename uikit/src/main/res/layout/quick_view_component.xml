@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/akakce_category_background">
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="@dimen/qv_margin_x_small"
+    android:layout_marginEnd="@dimen/qv_margin_small"
+    android:layout_marginBottom="@dimen/qv_margin_x_small"
+    android:background="@drawable/card_view_bg">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="@dimen/qv_margin_x_small"
-        android:layout_marginEnd="@dimen/qv_margin_small"
-        android:layout_marginBottom="@dimen/qv_margin_x_small"
         app:cardCornerRadius="@dimen/qv_margin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cellContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
