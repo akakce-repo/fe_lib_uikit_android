@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/akakce_category_background">
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="@dimen/qv_margin_x_small"
+    android:layout_marginEnd="@dimen/qv_margin_small"
+    android:layout_marginBottom="@dimen/qv_margin_x_small"
+    android:background="@drawable/card_view_bg">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="@dimen/qv_margin_x_small"
-        android:layout_marginEnd="@dimen/qv_margin_small"
-        android:layout_marginBottom="@dimen/qv_margin_x_small"
         app:cardCornerRadius="@dimen/qv_margin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cellContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -30,6 +30,7 @@
                 android:layout_height="@dimen/qv_image_height"
                 android:layout_marginTop="@dimen/qv_margin_small"
                 android:layout_marginEnd="@dimen/qv_margin"
+                android:layout_marginStart="5dp"
                 android:background="@drawable/image_background"
                 android:padding="5dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -82,7 +83,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="@dimen/margin_x_small"
                 android:layout_marginEnd="@dimen/margin_x_small"
-                android:background="@drawable/follow_btn_bg"
+                android:background="@drawable/hpl_follow_btn_bg"
                 android:clickable="true"
                 android:focusable="true"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -119,7 +120,7 @@
                 android:id="@+id/name"
                 android:layout_width="@dimen/zero"
                 android:layout_height="32dp"
-                android:layout_marginStart="@dimen/qv_margin_x_small"
+                android:layout_marginStart="@dimen/qv_margin_start"
                 android:layout_marginTop="@dimen/margin_normal"
                 android:layout_marginEnd="10dp"
                 android:fontFamily="@font/roboto_regular"
@@ -136,7 +137,7 @@
                 android:id="@+id/star_list"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/qv_margin_x_small"
+                android:layout_marginStart="@dimen/qv_margin_start"
                 android:layout_marginTop="@dimen/margin_x_small"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toEndOf="@id/imageDarkCont"
@@ -146,7 +147,7 @@
                 android:id="@+id/cheaper_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/qv_margin_x_small"
+                android:layout_marginStart="@dimen/qv_margin_start"
                 android:layout_marginTop="@dimen/qv_special_margin_nine"
                 android:letterSpacing="0.03"
                 android:text="@string/cheapest"
@@ -156,13 +157,13 @@
                 app:layout_constraintStart_toEndOf="@id/imageDarkCont"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/discount_icon"
                 android:layout_width="@dimen/discount_icon_width"
                 android:layout_height="@dimen/discount_icon_height"
                 android:layout_marginStart="@dimen/margin_small"
                 android:layout_marginTop="@dimen/qv_special_margin_one"
-                android:background="@drawable/ic_vector"
+                android:src="@drawable/ic_vector"
                 app:layout_constraintStart_toEndOf="@id/cheaper_text"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -185,7 +186,7 @@
                 android:id="@+id/price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/qv_margin_x_small"
+                android:layout_marginStart="@dimen/qv_margin_start"
                 android:layout_marginTop="@dimen/special_margin_five"
                 android:fontFamily="@font/roboto_regular"
                 android:includeFontPadding="false"
@@ -206,7 +207,7 @@
                 android:textAllCaps="true"
                 android:textColor="@color/akakce_base_blue"
                 android:textFontWeight="400"
-                android:textSize="@dimen/text_font_size"
+                android:textSize="@dimen/qv_text_font_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cheaper_text" />
 
@@ -214,7 +215,7 @@
                 android:id="@+id/unit_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/qv_margin_x_small"
+                android:layout_marginStart="@dimen/qv_margin_start"
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/akakce_base_purple"
@@ -269,7 +270,7 @@
                 android:id="@+id/line"
                 android:layout_width="@dimen/zero"
                 android:layout_height="@dimen/qv_line_heigth"
-                android:layout_marginStart="@dimen/qv_margin_x_small"
+                android:layout_marginStart="@dimen/qv_margin_start"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="@dimen/margin_normal"
                 android:background="@color/akakce_blue_gray200"
@@ -282,8 +283,8 @@
                 android:id="@+id/dot"
                 android:layout_width="@dimen/qv_small_size"
                 android:layout_height="@dimen/qv_small_size"
-                android:layout_marginStart="@dimen/qv_margin_x_small"
-                android:layout_marginTop="@dimen/qv_margin_x_small"
+                android:layout_marginStart="@dimen/qv_margin_start"
+                android:layout_marginTop="@dimen/qv_dot_margin"
                 android:src="@drawable/qv_dot"
                 android:visibility="gone"
                 app:layout_constraintStart_toEndOf="@id/imageDarkCont"
@@ -373,7 +374,7 @@
                 android:id="@+id/dot_info"
                 android:layout_width="@dimen/qv_small_size"
                 android:layout_height="@dimen/qv_small_size"
-                android:layout_marginStart="@dimen/qv_margin_x_small"
+                android:layout_marginStart="@dimen/qv_margin_start"
                 android:layout_marginTop="@dimen/qv_special_margin_seven"
                 android:src="@drawable/qv_dot"
                 android:visibility="gone"
@@ -396,7 +397,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/dot_info"
                 app:layout_constraintTop_toBottomOf="@id/dot" />
-
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/prQvRecycler"
@@ -453,6 +453,14 @@
                 </RelativeLayout>
 
             </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
