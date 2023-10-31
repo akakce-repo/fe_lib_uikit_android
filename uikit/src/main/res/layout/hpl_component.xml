@@ -33,17 +33,21 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/badge"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/qv_special_one"
+                android:layout_marginEnd="20dp"
                 android:background="@drawable/hpl_badge"
+                android:ellipsize="end"
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="start"
                 android:lineHeight="@dimen/qv_badge_line_height"
+                android:maxLines="1"
                 android:textAlignment="center"
                 android:textFontWeight="700"
                 android:textSize="@dimen/qv_badge_text_size"
                 android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
