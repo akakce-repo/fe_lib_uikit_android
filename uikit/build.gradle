@@ -67,7 +67,7 @@ dependencies {
     implementation 'androidx.activity:activity-compose:1.4.0'
 
     //AkakceStyle
-    implementation 'com.github.akakce-repo:fe_android_akakce_style:1.0.8'
+    implementation 'com.github.akakce-repo:fe_android_akakce_style:1.0.9'
 
 }
 
